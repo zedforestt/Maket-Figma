@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: #333; /* Rasm yuklanmasa ko'rinadigan rang */
+    background-color: #333;
 }
 
 .box img {
@@ -118,7 +118,7 @@
 
 
 
-/* Umumiy stillar */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -143,7 +143,6 @@ h2 {
     margin-bottom: 24px;
 }
 
-/* Yuqori qism (Features) */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -170,7 +169,7 @@ h2 {
     line-height: 1.4;
 }
 
-/* Ipoteka bo'limi */
+
 .mortgage-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -222,7 +221,7 @@ h2 {
     gap: 10px;
 }
 
-/* Eng yaxshi variantlar (Karusel / Skroll) */
+
 .options-scroll {
     display: flex;
     gap: 16px;
@@ -295,7 +294,7 @@ h2 {
     cursor: pointer;
 }
 
-/* Ko'proq ko'rish foni xira kartochka */
+
 .view-more-card {
     position: relative;
     display: flex;
@@ -781,3 +780,22 @@ h2 {
     color: #495057;
     font-size: 12px;
 }
+
+@media (max-width:600px) {
+    .footer-asosiy-qism{
+        flex-direction: column;
+    }
+
+    .kartalar-qatori{
+        flex-direction: column;
+    }
+    
+    .tanishuv-bloki{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
