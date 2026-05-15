@@ -1,0 +1,783 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.blok{
+    position: relative;
+    height: 100vh;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #333; /* Rasm yuklanmasa ko'rinadigan rang */
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.qizil{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.matn {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.tel span {
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.ikonka{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box5 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box5 h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.izlash {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    color: #333;
+}
+
+.shahr{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #eee;
+    padding-right: 15px;
+}
+
+.shahr {
+    border-right: none;
+}
+
+.shahr label {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.shahr select {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+.izlash {
+    background-color: #e69b81;
+    color: white;
+    border: none;
+    padding: 0 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+/* Umumiy stillar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* Yuqori qism (Features) */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-item .icon {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #adb5bd;
+    line-height: 1.4;
+}
+
+/* Ipoteka bo'limi */
+.mortgage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.mortgage-card {
+    height: 160px;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue-card { background-color: #e7f1ff; color: #000; }
+.pink-card { background-color: #ffeef0; color: #000; }
+.border-card { 
+    border: 1px solid #495057; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 150px;
+    line-height: 1.2;
+}
+
+.card-img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.more-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Eng yaxshi variantlar (Karusel / Skroll) */
+.options-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+.options-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.options-scroll::-webkit-scrollbar-thumb {
+    background: #495057;
+    border-radius: 10px;
+}
+
+.product-card {
+    min-width: 200px;
+    background: #2c3036;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.img-container {
+    width: 100%;
+    height: 157px;
+    background: #3c414a;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 12px;
+}
+
+.product-info h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.details {
+    font-size: 11px;
+    color: #adb5bd;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fav-btn {
+    background: none;
+    border: 1px solid #495057;
+    color: #ff4d4d;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Ko'proq ko'rish foni xira kartochka */
+.view-more-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+}
+
+.bg-blur {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px) brightness(0.5);
+    position: absolute;
+}
+
+.overlay-text {
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 35px;
+    }
+
+    .feature-item {
+        background: #2c3036;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .feature-item p {
+        font-size: 13px;
+    }
+
+    .mortgage-grid {
+      
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .vazifa {
+        height: 130px;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .card-matn h3 {
+        font-size: 18px;
+        max-width: 140px;
+    }
+
+    .card-img {
+        max-height: 75px;
+        right: 8px;
+        bottom: 8px;
+    }
+
+    .more-link {
+        font-size: 16px;
+    }
+
+    .options-scroll {
+        gap: 12px;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .product-card {
+        min-width: 170px;
+        border-radius: 12px;
+    }
+
+    .img-container {
+        height: 130px;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-info h4 {
+        font-size: 13px;
+    }
+
+    .jihoz{
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .price {
+        font-size: 13px;
+    }
+
+    .fav-btn {
+        padding: 2px 6px;
+        font-size: 12px;
+    }
+
+    .julqunboy {
+        min-width: 130px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .quvonch {
+        min-width: 150px;
+    }
+    
+    .card-text h3 {
+        font-size: 16px;
+    }
+}
+
+
+
+
+.sahifa-konteyner {
+    background-color: #2b313b;
+    font-family: 'Inter', sans-serif;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tanishuv-bloki {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+
+
+.matn-kartasi {
+    background-color: #ffffff;
+    border-radius: 28px;
+    padding: 40px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.tanishuv-sarloghi {
+    color: #1c1c1c;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.tanishuv-matni {
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+.tanlash-havolasi {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+}
+
+.havola-strelka {
+    font-size: 20px;
+}
+
+
+.bino-kartasi {
+    flex: 1; 
+    height: auto;
+    min-height: 380px;
+    border-radius: 28px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bino-rasmi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.jamoa-bloki {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sektsiya-sarloghi {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.karusel-konteyner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+
+.kartalar-qatori {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.ishchi-kartasi {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 12px;
+    flex: 1; 
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+.rasm-maydoni {
+    width: 100%;
+    height: 230px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.profil-rasmi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.matn-maydoni {
+    padding: 14px 4px 4px 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ishchi-ismi {
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+}
+
+.ishchi-tel {
+    color: #9da3ad;
+    font-size: 14px;
+    margin: 0 0 16px 0;
+}
+
+.aloqa-tugma {
+    background-color: #e6a497;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+}
+
+.aylantirish-tugmasi {
+    background-color: #e6a497;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.strelka-belgisi {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+
+
+
+.sayt-footeri {
+    background-color: #242b35;
+    color: #ffffff;
+    padding: 60px 80px 30px 80px;
+    font-family: 'Inter', sans-serif;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-asosiy-qism {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+}
+
+.footer-ustun {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.kompaniya-haqida {
+    flex: 1.5; 
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-uycha {
+    font-size: 22px;
+}
+
+.logo-matni {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.ustun-matn-izoh {
+    color: #9da3ad;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    max-width: 320px;
+}
+
+.tarmoqlar-bloki {
+    display: flex;
+    gap: 12px;
+}
+
+.tarmoq-dumaloq {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ustun-sarloghi {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.havolalar-royxati, .kontaktlar-royxati {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.havolalar-royxati a, .kontakt-link {
+    color: #9da3ad;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.havolalar-royxati a:hover, .kontakt-link:hover {
+    color: #ffffff;
+}
+
+
+.kontakt-qator {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.kontakt-belgi {
+    color: #e6a497; 
+    font-size: 16px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.manzil-matni-f {
+    color: #9da3ad;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.footer-pastki-qism {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.huquqlar-matni {
+    color: #6c757d;
+    font-size: 14px;
+    margin: 0;
+}
+
+.huquqiy-havolalar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.huquqiy-havolalar a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.huquqiy-havolalar a:hover {
+    color: #ffffff;
+}
+
+.tayoqcha {
+    color: #495057;
+    font-size: 12px;
+}
