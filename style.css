@@ -793,6 +793,9 @@ h2 {
     .tanishuv-bloki{
         flex-direction: column;
     }
+    .blok{
+        flex-direction: column;
+    }
 }
 
 
